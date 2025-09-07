@@ -201,87 +201,67 @@ body { font-family: 'Inter', sans-serif; color:#333; line-height:1.6; background
   margin-bottom: 15px;
   color: #fff;
 }
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  body { font-size: 16px; }
-
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .menu {
-    flex-direction: column;
-    width: 100%;
-    gap: 10px;
-    margin-top: 15px;
-  }
-
-  .menu li {
-    width: 100%;
-  }
-
-  .menu li a {
-    display: block;
-    padding: 10px 0;
-    width: 100%;
-  }
-
-  .hero {
-    padding: 80px 30px;
-  }
-
-  .hero h2 {
-    font-size: 1.8rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .beneficios,
-  .cursos,
-  .oportunidad,
-  .valores {
-    padding: 60px 20px;
-  }
-
-  .beneficios-grid,
-  .cursos-grid,
-  .oportunidad-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .valores-grid {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .btn {
-    width: 100%;
-    padding: 12px 20px;
-    font-size: 1rem;
-  }
-
-  .footer {
-    padding: 20px;
-  }
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: #2a9d8f;
-  text-decoration: none;
+.razones-section {
+  background-color: #e0f4f1; /* Verde agua claro */
+  color: #264653;
+  padding: 80px 50px;
+  text-align: center;
 }
-.logo-img {
-  vertical-align: middle;
+
+.razones-section .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.razones-list {
+  list-style: none;
+  padding: 0;
+  margin: 40px 0;
+  text-align: left;
+}
+
+.razones-list li {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  padding-left: 30px;
   position: relative;
-  top: 1px;
 }
 
+.razones-list li::before {
+  content: "✅";
+  position: absolute;
+  left: 0;
+  top: 0;
 }
+.acompanamiento-section {
+  text-align: center;
+  padding: 60px 30px;
+  background-color: #e0f7f4;
+}
+
+.acompanamiento-card {
+  display: inline-block;
+  background-color: #cceee8;
+  padding: 20px 30px;
+  border-radius: 12px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #264653;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.acompanamiento-card:hover {
+  background-color: #2a9d8f;
+  color: #ffffff;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+  
 
