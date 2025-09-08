@@ -16,3 +16,23 @@ const appearOnScroll = new IntersectionObserver(function(entries, observer) {
 faders.forEach(fader => {
   appearOnScroll.observe(fader);
 });
+const trueFocusContainer = document.querySelector('.truefocus-container');
+const words = document.querySelectorAll('.truefocus-word');
+let index = 0;
+
+function cycleWords() {
+  if (!trueFocusContainer.classList.contains('visible')) {
+    // Espera hasta que la animación de scroll termine (se agregue la clase visible)
+    setTimeout(cycleWords, 200);
+    return;
+  }
+
+  words.forEach(word => word.classList.remove('active'));
+  words[index].classList.add('active');
+  index = (index + 1) % words.length;
+
+  setTimeout(cycleWords, 2000);
+}
+
+// Inicia el ciclo
+cycleWords();
